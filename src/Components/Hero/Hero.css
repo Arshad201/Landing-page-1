@@ -1,0 +1,110 @@
+.hero-section{
+    background-color: var(--darkBlue);
+    padding-top: 7rem;
+    background-image: url('/src/assets/images/hero-pattern.svg'),  url('/src/assets/images/hero-pattern.svg');
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: -0.5% 95%, 99.5% 5%;
+}
+
+.hero-wrapper{
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+    flex: 0.9;
+}
+
+.hero-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    padding-right: 8rem;
+}
+
+.hero-heading span{
+    color: var(--RedOrange);
+}
+
+.hero-para{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    padding: 2.5rem 14rem 2.5rem 0rem;
+}
+
+.hero-img-container{
+    flex: 1.1;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.btn{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--RedOrange);
+    padding: 1.9rem 4rem;
+    border-radius: 0.4rem;
+    border: unset;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .hero-heading{
+        padding-right: 0rem;
+        font-size: 3.2rem;
+    }
+    .hero-para{
+        padding-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .hero-wrapper{
+        width: 90%;
+    }
+
+    .hero-content{
+        flex: 1;
+       
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-wrapper{
+        flex-direction: column;
+    }
+
+    .hero-content{
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hero-content{
+        padding: 1rem 2rem;
+    }
+    .hero-heading{
+        font-size: 2.5rem;
+    }
+}
+

@@ -1,0 +1,92 @@
+.team{
+    padding: 16rem 0rem 8rem 0rem;
+    background-image: url("/src/assets/images/orange-pattern.png"), url("/src/assets/images/orange-pattern.png");
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: 99.5% 25%, 0% 95%;
+    background-color: var(--white);
+}
+
+.team-wrapper{
+    width: 70%;
+    margin: 0rem auto;
+    text-align: center;
+}
+
+.sub-heading{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.3em;
+    color: var(--RedOrange);
+
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+    color: var(--darkBlue);
+    padding: 1.5rem 0rem 5rem 0rem;
+}
+
+.team-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.team-card{
+    border: 1px solid var(--whiteSmoke);
+    border-radius: 0.9rem;
+}
+
+.team-card img{
+    width: 100%;
+}
+
+.team-card .card-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.02em;
+    color: var(--darkBlue);
+    padding: 2rem 1rem 0.8rem 2rem;
+}
+
+.team-card .para{
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+    padding: 0rem 1rem 2rem 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .team-wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .team{
+        padding: 4rem 0rem;
+    }
+    .team-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .team-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

@@ -1,0 +1,72 @@
+.whoWeAre{
+    padding: 7rem 0rem;
+}
+
+.whoWeAre-wrapper{
+    width: 70%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.whoWeAre-img-wrapper{
+    flex: 1;
+}
+.whoWeAre-img-wrapper img{
+    width: 100%;
+}
+.whoWeAre-content{
+    flex: 1;
+}
+
+.whoWeAre .heading{
+    font-size: 3.5rem;
+    padding: 2rem 5rem 0rem 0rem;
+    line-height: 1.4em;
+}
+
+.whoWeAre .para{
+    padding: 2rem 6rem 2rem 0rem;
+}
+
+.whoWeAre ol{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+
+.whoWeAre ol li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+}
+
+@media only screen and (max-width: 1024px) {
+    .whoWeAre-wrapper{
+        width: 90%;
+    }
+
+    .whoWeAre .heading{
+        font-size: 3rem;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .whoWeAre .para{
+        padding: 2rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .whoWeAre-wrapper{
+        flex-direction: column;
+    }
+}
+
